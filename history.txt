@@ -1,0 +1,40 @@
+  943  ls -al
+  944  cd ..
+  945  rm -rf linux_ha_12/
+  946  git clone git@github.com:Antonshk2013/home_task_12.git
+  947  cd home_task_12/
+  948  ls -al
+  949  git checkout -b feature
+  950  nano README.md
+  951  nano .gitignore 
+  952  git status
+  953  git add README.md 
+  954  git commit -m "first commit"
+  955  git branch -v
+  956  git push -u origin feature 
+  957  cd ..
+  958  rm -rf home_task_12/
+  959  ls -al
+  960  git clone git@github.com:Antonshk2013/home_task_12.git
+  961  cd home_task_12/
+  962  echo "Install APP">>README.md
+  963  echo ".env">>.gitignore
+  964  echo ".venv/">>.gitignore
+  965  echo ".idea/">>.gitignore
+  966  cat .gitignore 
+  967  git checkout -b feature
+  968  git branch -v
+  969  git add .
+  970  git commit -m "Initial commit for new branch"
+  971  git push -u origin feature
+  972  git commit --amend -m "Initial commit for new branch amend"
+  973  git push --force
+  974  git switch main
+  975  git branch -v
+  976  git merge feature 
+  977  history | teil 30
+  978  history | tail 30
+  979  history
+  980  history | tail -30
+  981  history | tail -40
+  982  history | tail -40>history.txt
